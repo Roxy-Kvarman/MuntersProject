@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MuntersProject.Helper
 {
@@ -10,12 +8,6 @@ namespace MuntersProject.Helper
         {
             Random random = new Random();
             return random.NextDouble() * (maximum - minimum) + minimum;
-        }
-
-        public static int GetRandomNumber(int minimum, int maximum)
-        {
-            Random random = new Random();
-            return random.Next(minimum, maximum);
         }
     }
 }

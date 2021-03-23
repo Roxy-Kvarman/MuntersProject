@@ -1,9 +1,5 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
+﻿using System;
+
 
 namespace MuntersProject.Extensions
 {
@@ -13,10 +9,6 @@ namespace MuntersProject.Extensions
         {
             var currentTime = DateTime.Now;
             Console.WriteLine($"{currentTime}: {text}");
-        }
-        public static void PrintInfo(string text)
-        {
-            Console.WriteLine(text);
         }
     }
 }

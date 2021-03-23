@@ -1,12 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MuntersProject.Pages
 {
-   public class LogInPage : PageBase
+    public class LogInPage : PageBase
     {
         public LogInPage(IWebDriver driver) : base("Munters Sign in", driver) { }
 
@@ -21,7 +18,7 @@ namespace MuntersProject.Pages
             signInBtn.Click();
             Wait(120);
             return new HomePage(_driver);
-            
+
         }
     }
 }
